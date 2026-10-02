@@ -1,0 +1,105 @@
+﻿body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.cardLink {
+    text-decoration: none;
+    display: block;
+}
+
+.productCard {
+    background-color: #fdf2f8;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(236, 72, 153, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(236, 72, 153, 0.1);
+}
+
+.cardLink:hover .productCard {
+    transform: translateY(-6px);
+    background-color: #fce7f3;
+    box-shadow: 0 12px 24px rgba(236, 72, 153, 0.25); 
+}
+
+.productCard img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.productName {
+    font-size: 1.25em;
+    color: #831843; 
+    font-weight: 600;
+    margin: 0;
+}
+
+
+
+
+
+.viewProduct {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #fdf2f8;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 4px 14px rgba(236, 72, 153, 0.08);
+    border: 1px solid rgba(236, 72, 153, 0.1);
+}
+
+@media (min-width: 768px) {
+    .viewProduct {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.productImage {
+    flex: 1;
+}
+
+    .productImage img {
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15);
+    }
+
+.productInfo {
+    flex: 1;
+}
+
+    .productInfo h2 {
+        font-size: 2.5em;
+        font-weight: 800;
+        color: #1f2937;
+        margin-top: 0;
+        margin-bottom: 16px;
+        letter-spacing: -0.02em;
+    }
+
+    .productInfo p {
+        font-size: 1.125em;
+        line-height: 1.75;
+        color: #4b5563;
+        margin-bottom: 32px;
+    }

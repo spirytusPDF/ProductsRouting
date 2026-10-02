@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details</title>
+    <link rel="stylesheet" href="~/css/product.css" />
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="viewProduct">
+            <div class="productImage">
+                <img src="@Url.Content(ViewBag.Product.ImageUrl)" alt="@ViewBag.Product.Name" />
+            </div>
+            <div class="productInfo">
+                <h2>@ViewBag.Product.Name</h2>
+                <p>@ViewBag.Product.Description</p>
+            </div>
+    </div>
+</body>
+</html>
